@@ -18,7 +18,7 @@
                 <div class="card-body p-3">
                     <p>Nama : {{ $item->name }}</p>
                     <p>NIK : {{ $item->user_nik }}</p>
-                    <p>No Telpon : {{ $item->user_phone }}</p>
+                    <p>No Telpon : {{ $item->user->phone }}</p>
                     <p>Tanggal : {{ $item->created_at->format('l, d F Y - H:i:s') }}</p>
                     <p>Status :
                         @if ($item->status == 'Belum di Proses')
